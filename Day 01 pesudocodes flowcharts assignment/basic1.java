@@ -35,6 +35,7 @@ public class basic1{
             int average =  sum/t;
             System.out.println("The average of the numbers is : "+average);
         }
+        sc.close();
     }
     
     public static void main(String[] args) {
@@ -42,4 +43,5 @@ public class basic1{
         greatestOfTwoNum(10, 100);   
         printEvenNums(9, 100);
     }
+  
 }

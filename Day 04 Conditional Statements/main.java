@@ -1,6 +1,5 @@
 
 import java.util.Scanner;
-import javax.sound.midi.SysexMessage;
 
 public class main {
 
@@ -40,7 +39,7 @@ public class main {
         System.out.print("Enter a number : ");
         int num2 = sc.nextInt();
 
-        if (num < 0) {
+        if (num2 < 0) {
             System.out.println("Negative");
         } else {
             System.out.println("Positive");
@@ -57,7 +56,7 @@ public class main {
         System.out.print("Enter week number : ");
         int weekNum = sc.nextInt();
 
-        switch (weekNum) {
+        switch(weekNum) {
             case 1:
                 System.out.println("Monday");
                 break;
@@ -99,6 +98,8 @@ public class main {
         } else {
             System.out.println("Not Leap Year");
         }
+
+        sc.close();
 
     }
 }

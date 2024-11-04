@@ -55,5 +55,6 @@ public class days_02 {
        
        // example : int * byte == int
 
+       sc.close();
     }
 }
