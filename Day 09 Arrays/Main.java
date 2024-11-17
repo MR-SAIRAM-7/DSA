@@ -113,16 +113,6 @@ public class Main {
         // int marks[index] = 10; initialing 
 
         // Arrays are mutable -- arrays are passed by reference to a function i.e, the actual values will be changed inside the main function if we change the values of array inside a function
-        int nums[] = {2, 3, 4, 5, 6, 7};
-        updateArray(nums);
-        int key = 10;
-        int target = 6;
-        linearSearch(nums, key);
-        binarySearch(nums, target);
-        printArray(nums);
-        printPairs(nums);
-        printSubArrays(nums);
-        maxSubArraySum(nums);
-        reverseArray(nums);
+        
     }
 }
