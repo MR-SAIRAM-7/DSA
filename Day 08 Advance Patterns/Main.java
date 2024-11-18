@@ -19,17 +19,17 @@ public class Main {
 
             //for stars
             for (int j = 1; j <= i; j++) {
-                System.out.print("*");
+                System.out.print(" *");
             }
 
             // for spaces
             for (int j = 1; j <= 2 * (n - i); j++) {
-                System.out.print(" ");
+                System.out.print("  ");
             }
 
             // for stars
             for (int j = 1; j <= i; j++) {
-                System.out.print("*");
+                System.out.print(" *");
             }
             System.out.println();
         }
@@ -37,15 +37,15 @@ public class Main {
         for (int i = n; i >= 1; i--) {
             //for stars
             for (int j = 1; j <= i; j++) {
-                System.out.print("*");
+                System.out.print(" *");
             }
             // for spaces
             for (int j = 1; j <= 2 * (n - i); j++) {
-                System.out.print(" ");
+                System.out.print("  ");
             }
             // for stars
             for (int j = 1; j <= i; j++) {
-                System.out.print("*");
+                System.out.print(" *");
             }
             System.out.println();
         }
@@ -151,7 +151,7 @@ public class Main {
         //     }
         // System.out.println();
         // }
-        // butterFlyPattern(4);
+        butterFlyPattern(4);
         // solidRhombus(5);
         // diamondPattern(4);
     }

@@ -13,6 +13,12 @@ public class Main {
         }
     }
 
+    public static void printArrayMethod2(int arr[]) {
+        for (int i : arr) {
+            System.out.print(i + " ");
+        }
+    }
+
     public static int linearSearch(int arr[], int key) {
         for (int i = 0; i < arr.length; i++) {
             if (key == arr[i]) {
@@ -26,7 +32,7 @@ public class Main {
         int start = 0;
         int end = arr.length - 1;
         while (start <= end) {
-            int mid = (start + (end - start)) / 2;
+            int mid = (start + (end - start)) / 2;   // to overcome overflow condition of Intgeger max
             if (target == arr[mid]) {
                 return mid;
             }
@@ -53,12 +59,15 @@ public class Main {
     }
 
     public static void printPairs(int arr[]) {
+        int totalPairs = 0;
         for (int i = 0; i < arr.length; i++) {
-            for (int j = i; j < arr.length; j++) {
+            for (int j = i + 1; j < arr.length; j++) {
                 System.out.print("(" + arr[i] + "," + arr[j] + ")");
+                totalPairs++;
             }
             System.out.println();
         }
+        System.out.println("Total Pairs : " + totalPairs);
     }
 
     public static void printSubArrays(int arr[]) {
@@ -113,6 +122,5 @@ public class Main {
         // int marks[index] = 10; initialing 
 
         // Arrays are mutable -- arrays are passed by reference to a function i.e, the actual values will be changed inside the main function if we change the values of array inside a function
-        
     }
 }
