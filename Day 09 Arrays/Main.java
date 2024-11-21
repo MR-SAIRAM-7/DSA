@@ -97,8 +97,10 @@ public class Main {
         System.out.println("Minimum SubArray sum is : " + minSum);
     }
 
+    
+
     // Kadane's Algorithm
-    public static int maxSubArraySum(int arr[]) {
+    public static int kadanesAlgorithm(int arr[]) {
         int sum = 0;
         int maxSum = Integer.MIN_VALUE;
         for (int i = 0; i < arr.length; i++) {
